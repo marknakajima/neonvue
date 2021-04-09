@@ -1,0 +1,19 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+// Override Vuetify's heading with custom google font
+.v-application {
+	.display-4,
+	.display-3,
+	.display-2,
+	.display-1,
+	.headline,
+	.title,
+	.subtitle-1 {
+		font-family: "Titillium Web", sans-serif !important;
+		font-weight: bold;
+		letter-spacing: 2px !important;
+	}
+}
