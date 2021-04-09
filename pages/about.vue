@@ -7,7 +7,12 @@
             About
         </h1>
 
-        <v-card max-width="540" class="mx-auto mt-n3" elevation="0">
+        <v-card
+            max-width="540"
+            class="mx-auto pa-4"
+            elevation="0"
+            :color="'#22232e'"
+        >
             <v-card-text>
                 <p class="mb-6">
                     Neonvue is a Vue sci-fi starter template to quickly
