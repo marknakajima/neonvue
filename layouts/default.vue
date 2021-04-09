@@ -218,20 +218,18 @@ export default {
 </script>
 
 <style lang="scss">
-
 // Custom heading
 .v-application {
-	.display-4,
-	.display-3,
-	.display-2,
-	.display-1,
-	.headline,
-	.title,
-	.subtitle-1 {
-		font-family: "Titillium Web", sans-serif !important;
-		font-weight: bold;
-		letter-spacing: 2px !important;
-	}
+    .display-4,
+    .display-3,
+    .display-2,
+    .display-1,
+    .headline {
+        font-family: "Titillium Web", sans-serif !important;
+        font-weight: bold;
+        letter-spacing: 2px !important;
+        background-color: #1c1e26;
+    }
 }
 
 // Base color changes
