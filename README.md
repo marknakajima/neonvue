@@ -2,11 +2,11 @@
 
 ![](./static/gh-logo.jpg)
 
-Neonvue is a Vue sci-fi starter template to quickly visualize your next futuristic theme.  It uses Vuetify + Nuxt.js + Vuex stack for static page generation and is optimized for SEO.
+Neonvue is a Vue sci-fi starter template to quickly visualize your next futuristic theme.  It uses Vuetify + Nuxt.js + Vuex stack for static page generation and optimized for SEO.
 
 ## Demo
 
-[Online Demo]()
+[Online Demo](https://lucid-fermat-af207e.netlify.app/)
 
 ## Installation, development server and build
 
