@@ -26,7 +26,7 @@
                             ></v-img>
                         </v-col>
                         <v-col cols="12" sm="4" md="4" lg="4" xl="4">
-                            <span class="headline pr-2 white-text">{{
+                            <span class="subtitle-1 pr-2 white-text">{{
                                 slide.name
                             }}</span>
 
