@@ -224,11 +224,12 @@ export default {
     .display-3,
     .display-2,
     .display-1,
-    .headline {
+    .headline,
+    .title {
         font-family: "Titillium Web", sans-serif !important;
         font-weight: bold;
         letter-spacing: 2px !important;
-        background-color: #1c1e26;
+        background-color: #1c1e26 !important;
     }
 }
 
