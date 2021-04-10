@@ -62,7 +62,9 @@
                             </v-row>
 
                             <v-row class="mt-4 subtitle-2 grey--text">
-                                {{ currentInfo.snippet }}
+                                <v-col cols="12">
+                                    {{ currentInfo.snippet }}
+                                </v-col>
                             </v-row>
                         </v-col>
                     </v-row>
