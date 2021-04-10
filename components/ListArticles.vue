@@ -13,57 +13,36 @@
                     <v-list-item
                         :key="item.title"
                         @click="goDetail(item)"
-                        class="pt-4 pb-4 d-flex align-start"
+                        class="pt-6 pb-4 d-flex align-start"
                     >
-                        <v-list-item-avatar v-if="rankIcon" tile class="mr-3 mt-2" >
+
+                        <v-list-item-avatar v-if="rankIcon" tile class="mr-3 mt-2" :class="'d-none d-lg-block'" >
 							<v-icon>
 								mdi-numeric-{{i+1}}-box-multiple
 							</v-icon>
-						
-							
-                          
                         </v-list-item-avatar>
-
-                        <div v-if="$vuetify.breakpoint.name == 'xl'">
-                            <v-list-item-avatar
-                                tile
-                                :size="220"
-                                class="d-xl-flex"
-                            >
-                                <v-img
+ 								<v-img
                                     :src="`/${item.slug}/${item.slug}-1.jpg`"
-                                    alt="site.name"
+                                    alt="item.name"
+									class="mr-6"
+									:class="[$vuetify.breakpoint.mdAndUp ? 'd-md-inline-block' : 'block']"
+									:max-width="[$vuetify.breakpoint.mdAndUp ? '320' : '120']"
                                 ></v-img>
-                            </v-list-item-avatar>
-                        </div>
-                        <div v-else>
-                            <v-list-item-avatar
-                                tile
-                                :size="160"
-                                class="d-xl-flex"
-                            >
-                                <!-- on small device load smaller image for faster loading. change below to ${item.slug}-1s.jpg and ready that file in folder -->
-                                <v-img
-                                    :src="`/${item.slug}/${item.slug}-1.jpg`"
-                                    alt="site.name"
-                                ></v-img>
-                            </v-list-item-avatar>
-                        </div>
-
-                        <v-list-item-content class="ml-2">
-                            <v-list-item-title class="subtitle-1 mt-n2">{{
+                        <v-list-item-content>
+                            <v-list-item-title class="subtitle-1 mt-n4" 
+								:class="[$vuetify.breakpoint.mdAndUp ? 'mb-4' : 'mb-1']">{{
                                 item.name
                             }}</v-list-item-title>
 
                             <v-list-item-subtitle
-                                class="subtitle-2 d-flex flex-row align-center mt-n2"
+                     			:class="[$vuetify.breakpoint.mdAndUp ? 'mb-4' : 'mb-1']"
                             >
                                 <rating-area
                                     :ratingNum="item.rating"
                                 ></rating-area>
                             </v-list-item-subtitle>
 
-                            <v-list-item-subtitle class="subtitle-2 mb-3">{{
+                            <v-list-item-subtitle class="subtitle-2 mb-4">{{
                                 item.text
                             }}</v-list-item-subtitle>
 
