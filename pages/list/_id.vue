@@ -47,10 +47,9 @@
                             <v-col sm="12" md="12" lg="12" xl="6">
                                 <v-row class="d-flex align-center">
                                     <v-col cols="12" md="auto">
-                                        <span
-                                            class="headline pr-6 font-weight-black"
-                                            >{{ current.name }}</span
-                                        >
+                                        <h1 class="pr-6">
+                                            {{ current.name }}
+                                        </h1>
                                     </v-col>
                                     <v-col cols="12" md="auto">
                                         <rating-area
@@ -61,7 +60,7 @@
                                     <v-col cols="12" md="auto">
                                         <v-card
                                             :class="[
-                                                $vuetify.breakpoint.lgAndDown
+                                                $vuetify.breakpoint.mdAndDown
                                                     ? 'mt-6'
                                                     : '',
                                             ]"
