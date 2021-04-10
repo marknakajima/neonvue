@@ -144,7 +144,7 @@ import CardsGrid from "~/components/CardsGrid.vue";
 export default {
     head() {
         return {
-            title: "Sci-fi Vuetify theme",
+            title: "Futuristic sci-fi Vue theme",
             meta: [
                 {
                     hid: "description",
