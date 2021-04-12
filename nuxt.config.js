@@ -4,11 +4,23 @@ let articlesJSON = require('./assets/data/articles.json');
 module.exports = {
 	generate     : {
 		routes : function() {
-			let dynamicRoutes = articlesJSON.map((article) => {
+			let tagRoutes = new Set([]);
+
+			let detailPageRoutes = articlesJSON.map((article) => {
+				for (const tag of article.tags) {
+					tagRoutes.add({ route: `/tags/` + tag });
+				}
+
 				return {
 					route : `/list/` + article.slug
 				};
 			});
+
+			let dynamicRoutes = [
+				...detailPageRoutes,
+				...tagRoutes
+			];
+
 			return dynamicRoutes;
 		}
 	},
