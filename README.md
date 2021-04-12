@@ -27,9 +27,9 @@ $ npm run generate
 
 ## Adding articles
 
-- Add a new object in ~/assets/data/articles.json. Copy all the properties from the old one and update the slug name with a new name Ex. "drones" 
-- Create a new folder "drones" in ~/static/ folder
-- Put 5 images in that folder using the naming convention : drones-1.jpg, drones-2.jpg, drones-3.jpg, drones-4.jpg, drones-5.jpg. 
+-  Open ~/assets/data/articles.json. For example, if you want to create a new article called "drones", copy any previous object in this file, update properties with "drones" data. Make sure that slug property is "drones" 
+- Create a new folder and name it "drones" in ~/static/ folder
+- Put 5 images in that folder using the following names : drones-1.jpg, drones-2.jpg, drones-3.jpg, drones-4.jpg, drones-5.jpg. 
 - Size for each images are
 
 | Name         | Size         |
@@ -47,6 +47,6 @@ $ npm run generate
 - Install 'serve' [https://www.npmjs.com/package/serve](https://www.npmjs.com/package/serve)
 - go into /dist/ and use 'npx serve' from CMD 
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
 
 
