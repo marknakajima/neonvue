@@ -1,5 +1,5 @@
 const colors = require('vuetify/es5/util/colors').default;
-import articlesJSON from './assets/data/articles.json';
+let articlesJSON = require('./assets/data/articles.json');
 
 module.exports = {
 	generate     : {
