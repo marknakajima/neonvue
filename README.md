@@ -1,6 +1,7 @@
 # Neonvue
 
-![](./static/gh-logo.jpg)
+![](https://github.com/marknakajima/public_assets/blob/master/images/neonvue/gh-logo.jpg)
+
 
 Neonvue is a Vue sci-fi starter template to quickly visualize your next futuristic theme.  It uses Vuetify + Nuxt.js + Vuex stack for static page generation and optimized for SEO.
 
